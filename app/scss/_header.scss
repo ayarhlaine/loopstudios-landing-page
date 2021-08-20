@@ -14,7 +14,7 @@
             gap: 0rem 3rem;
         }
         &__link {
-            color: white;
+            color: $white;
             transition: opacity 0.2s ease-in;
             &:hover{
                 opacity: 0.4;
@@ -25,12 +25,12 @@
         display: flex;
         &__text{
             display: inline;
-            border: 1px solid white;
+            border: 1px solid $white;
             width: 50%;
             padding: 1rem;
             &__title {
                 text-transform: uppercase;
-                color: white;
+                color: $white;
                 font-family: $font-family-secondary;
                 font-size: 3rem;
             }
