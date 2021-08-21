@@ -1,5 +1,35 @@
 .section1{
-    // 
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__image {
+        min-height: 25rem;
+        flex: 3;
+        background-image: url(../../images/desktop/image-interactive.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        flex: 1;
+        position: relative;
+        &__area {
+            position: absolute;
+            padding: 40px 0px 0 80px;
+            left: -50%;
+            bottom: 0%;
+            background-color: $white;
+        }
+        &__title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: $font-family-secondary;
+        }
+        &__description {
+            color: $very-dark-gray;
+        }
+    }
 }
 
 .section2 {
