@@ -27,3 +27,9 @@ body {
 .container {
     padding: 1rem 7rem;
 }
+
+@include maxw($mobile-breakpoint) {
+    .container {
+        padding: 1rem 1rem;
+    }
+}

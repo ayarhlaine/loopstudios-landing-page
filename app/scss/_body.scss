@@ -104,3 +104,72 @@
         }
     }
 }
+
+// Responsive
+@include maxw($mobile-breakpoint) {
+    .section1{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        flex-direction: column;
+        &__image {
+            min-height: 25rem;
+            background-image: url(../../images/mobile/image-interactive.jpg);
+            flex: 1;
+            background-size: contain;
+        }
+        &__text {
+            flex: 1;
+            &__area {
+                position: unset;
+                text-align: center;
+                padding: 0px;
+            }
+        }
+    }
+    .section2 {
+        &__header {
+            &__title {
+               
+            }
+            &__right {
+                display: none;
+            }
+        }
+        &__creation {
+            grid-template-columns: auto;
+            row-gap: 1rem;
+            &__item {
+                &__image { 
+                    min-height: 10rem;
+                }
+                &__image.first {
+                    background-image: url(../../images/mobile/image-deep-earth.jpg);
+                }
+                &__image.second {
+                    background-image: url(../../images/mobile/image-night-arcade.jpg);
+                }
+                &__image.third {
+                    background-image: url(../../images/mobile/image-soccer-team.jpg);
+                }
+                &__image.fourth {
+                    background-image: url(../../images/mobile/image-grid.jpg);
+                }
+                &__image.five {
+                    background-image: url(../../images/mobile/image-from-above.jpg);
+                }
+                &__image.six {
+                    background-image: url(../../images/mobile/image-pocket-borealis.jpg);
+                }
+                &__image.seven {
+                    background-image: url(../../images/mobile/image-curiosity.jpg);
+                }
+                &__image.eight {
+                    background-image: url(../../images/mobile/image-fisheye.jpg);
+                }
+                &__name {
+                    
+                }
+            }
+        }
+    }
+}
