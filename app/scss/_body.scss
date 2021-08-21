@@ -1,3 +1,9 @@
+.button {
+    background: none;
+    border: 1px solid $dark-gray;
+    padding: 0.5rem 2rem;
+}
+
 .section1{
     display: flex;
     flex-wrap: wrap;
@@ -43,13 +49,6 @@
             font-size: 2rem;
             color: $black;
         }
-        &__right {
-            &__button {
-                background: none;
-                border: 1px solid $dark-gray;
-                padding: 0.5rem 2rem;
-            }
-        }
     }
     &__creation {
         display: grid;
@@ -92,16 +91,20 @@
                 display: flex;
                 align-items: flex-end;
                 flex: 1;
-                background-color: rgba(#000000, 0.6);
+                background-color: rgba(#000000, 0.4);
                 padding: 1rem 1rem;
             }
             &__name {
                 font-family: $font-family-secondary;
-                margin: 0px;
+                margin: 5px 0px;
                 text-transform: uppercase;
                 color: $white;
+                letter-spacing: 0.5rem;
             }
         }
+    }
+    &__mobile__bottom{
+        display: none;
     }
 }
 
@@ -112,7 +115,7 @@
         padding-bottom: 0rem;
         flex-direction: column;
         &__image {
-            min-height: 25rem;
+            min-height: 15rem;
             background-image: url(../../images/mobile/image-interactive.jpg);
             flex: 1;
             background-size: contain;
@@ -128,9 +131,7 @@
     }
     .section2 {
         &__header {
-            &__title {
-               
-            }
+            justify-content: center;
             &__right {
                 display: none;
             }
@@ -170,6 +171,12 @@
                     
                 }
             }
+        }
+        &__mobile__bottom{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: center;
         }
     }
 }
