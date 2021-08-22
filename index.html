@@ -13,8 +13,35 @@
   <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
-  <header class="header container">
-    <nav class="nav">
+  <header class="header">
+    <div class="header__mobile__menu has-fade-in">
+      <div class="header__mobile__menu__header">
+        <a href="#" class="header__mobile__menu__logo">
+          <img src="./images/logo.svg" alt="Logo" class="header__mobile__menu__logo__image">
+        </a>
+        <a href="#" class="header__mobile__menu__close" id="closeIcon">
+          <img src="./images/icon-close.svg" alt="Close Icon" class="header__mobile__menu__logo__close">
+        </a>
+      </div>
+      <ul class="header__mobile__menu__links">
+        <li class="header__mobile__menu__item">
+          <a href="#" class="header__mobile__menu__link has-fade-in">About</a>
+        </li>
+        <li class="header__mobile__menu__item">
+          <a href="#" class="header__mobile__menu__link has-fade-in">Careers</a>
+        </li>
+        <li class="header__mobile__menu__item">
+          <a href="#" class="header__mobile__menu__link has-fade-in">Events</a>
+        </li>
+        <li class="header__mobile__menu__item">
+          <a href="#" class="header__mobile__menu__link has-fade-in">Products</a>
+        </li>
+        <li class="header__mobile__menu__item">
+          <a href="#" class="header__mobile__menu__link has-fade-in">Support</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav container">
       <a href="#" class="nav__logo">
         <img src="./images/logo.svg" alt="Logo" class="nav__logo__image">
       </a>
@@ -35,8 +62,11 @@
           <a href="#" class="nav__link">Support</a>
         </li>
       </ul>
+      <a href="#" class="nav__hamburger" id="hamburgerMenu">
+        <img src="./images/icon-hamburger.svg" alt="Hamburger Menu" class="nav__hamburger">
+      </a>
     </nav>
-    <div class="header__content">
+    <div class="header__content container">
       <div class="header__content__text">
         <h1 class="header__content__text__title">Immersive</h1>
         <h1 class="header__content__text__title">experiences</h1>
@@ -197,5 +227,6 @@
       </p>
     </div>
   </footer>
+  <script src="./app/js/app.js"></script>
 </body>
 </html>
