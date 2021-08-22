@@ -2,6 +2,13 @@
     background: none;
     border: 1px solid $dark-gray;
     padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in;
+    &:hover {
+        background-color: $black;
+        border: none;
+        color: $white;
+    }
 }
 
 .section1{
@@ -93,6 +100,13 @@
                 flex: 1;
                 background-color: rgba(#000000, 0.4);
                 padding: 1rem 1rem;
+                animation: background-color 0.2s ease-in-out;
+                &:hover{
+                    background-color: rgba(#ffffff, 0.6);
+                    .section2__creation__item__name{
+                        color: $black;
+                    }
+                }
             }
             &__name {
                 font-family: $font-family-secondary;
