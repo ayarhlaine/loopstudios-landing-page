@@ -27,8 +27,14 @@ body {
 .container {
     padding: 1rem 7rem;
 }
-
+// mobile
 @include maxw($mobile-breakpoint) {
+    .container {
+        padding: 1rem 1rem;
+    }
+}
+// tablet
+@include minandmaxw($mobile-breakpoint, $tablet-breakpoint) {
     .container {
         padding: 1rem 1rem;
     }

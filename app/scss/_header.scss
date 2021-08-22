@@ -103,3 +103,12 @@
         }
     }
 }
+@include minandmaxw($mobile-breakpoint, $tablet-breakpoint) {
+    .header {
+        .nav {
+            &__links {
+                gap: 0rem 2rem;
+            }
+        }
+    }
+}

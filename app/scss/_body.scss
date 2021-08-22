@@ -29,7 +29,7 @@
         position: relative;
         &__area {
             position: absolute;
-            padding: 40px 0px 0 80px;
+            padding: 1rem;
             left: -50%;
             bottom: 0%;
             background-color: $white;
@@ -181,9 +181,6 @@
                 &__image.eight {
                     background-image: url(../../images/mobile/image-fisheye.jpg);
                 }
-                &__name {
-                    
-                }
             }
         }
         &__mobile__bottom{
@@ -191,6 +188,31 @@
             padding-bottom: 1rem;
             display: flex;
             justify-content: center;
+        }
+    }
+}
+// tablet
+@include minandmaxw($mobile-breakpoint, $tablet-breakpoint) {
+    .section1{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        &__image {
+            min-height: 20rem;
+            flex: 1;
+            background-size: cover;
+        }
+        &__text {
+            flex: 1;
+            &__area {
+                position: unset;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+    }
+    .section2{
+        &__creation {
+            grid-template-columns: auto auto;
         }
     }
 }
