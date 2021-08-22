@@ -9,7 +9,6 @@
     &__links{
         display: flex;
         gap: 0rem 1rem;
-        margin: 0px;
         padding: 0px;
     }
     &__link__item{
@@ -36,6 +35,7 @@
     &__copyright {
         color: $very-dark-gray;
         font-size: 0.9rem;
+        margin-top: 2rem;
     }
 }
 
